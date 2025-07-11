@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vítor - Freelance Dev</title>
+    <style>
+        body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        background-color: #f4f4f4;
+        }
+        .container {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        border-radius: 8px;
+        overflow: hidden;
+        }
+        .header {
+        text-align: center;
+        padding: 30px 20px;
+        background-color: #111;
+        color: #fff;
+        }
+        .header h1 {
+        margin: 0;
+        font-size: 26px;
+        letter-spacing: 1px;
+        }
+        .hero {
+        position: relative;
+        }
+        .hero img {
+        width: 100%;
+        height: 30vh; /* ou height: 75%; se o container tiver altura definida */
+        object-fit: cover;
+        object-position: center;
+        display: block;
+        }
+        .hero-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 6px;
+        }
+        .hero-text h2 {
+        margin: 0;
+        font-size: 22px;
+        }
+        .hero-text a {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px 20px;
+        background-color: #ff4e6a;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 4px;
+        }
+        .content {
+        padding: 20px;
+        text-align: center;
+        }
+        .content h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        }
+        .content p {
+        color: #555;
+        line-height: 1.5;
+        }
+        .services {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .service {
+        background-color: #fafafa;
+        border: 1px solid #eee;
+        border-radius: 6px;
+        padding: 12px 10px;
+        }
+
+        .service img {
+        width: 100%;
+        height: 140px; /* altura aumentada */
+        object-fit: cover;
+        border-radius: 4px;
+        margin-bottom: 6px;
+        }
+
+        .service p {
+        margin: 4px 0 0;
+        font-size: 14px;
+        line-height: 1.3;
+        }
+
+        @media (max-width: 480px) {
+            .services {
+            grid-template-columns: 1fr;
+            }
+        }
+        .social {
+        text-align: center;
+        padding: 20px;
+        }
+        .social a {
+        display: inline-block;
+        margin: 0 10px;
+        text-decoration: none;
+        }
+        .social img {
+        width: 24px;
+        height: 24px;
+        }
+        .footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #f0f0f0;
+        font-size: 12px;
+        color: #888;
+        }
+        @media (max-width: 600px) {
+        .service {
+            width: 90%;
+        }
+        }
+    </style>
+  </head>
+  <body style="padding-top: 10px;">
+    <div class="container">
+      <div class="header">
+        <h1>Vítor Dev</h1>
+      </div>
+
+      <div class="hero">
+        <img src="https://media.istockphoto.com/id/1356364287/photo/close-up-focus-on-persons-hands-typing-on-the-desktop-computer-backlit-keyboard-screens-show.jpg?s=612x612&w=0&k=20&c=ijjq-DLNxIaPuGvIX8k06IZxMAjGpyJeboaV_byCX9k=" height="75%" alt="Banner">
+        <div class="hero-text">
+          <h2>Creation of professional websites</h2>
+          <a href="https://seulink.com">Look at my Portfolio</a>
+        </div>
+      </div>
+
+      <div class="content">
+        <h3>Turn your idea into a real project!</h3>
+        <p>Modern web development focused on performance, design, and user experience. Fast, secure, and customized websites.</p>
+      </div>
+
+    <div class="services">
+        <div class="service">
+            <img src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg" alt="Landing Page">
+            <p>Landing Pages</p>
+        </div>
+        <div class="service">
+            <img src="https://images.pexels.com/photos/267394/pexels-photo-267394.jpeg" alt="E-commerce">
+            <p>Virtual Shops</p>
+        </div>
+        <div class="service">
+            <img src="https://images.pexels.com/photos/3807697/pexels-photo-3807697.jpeg" alt="Portfolio">
+            <p>Portfolios</p>
+        </div>
+        <div class="service">
+            <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg" alt="Institucional">
+            <p>Institutional Sites</p>
+        </div>
+    </div>
+
+    <div class="social">
+    <a href="https://instagram.com/seuuser" aria-label="Instagram">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" viewBox="0 0 448 512">
+        <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9 
+        114.9-51.3 114.9-114.9S287.7 141 224.1 141zm0 190.6c-41.8 
+        0-75.7-33.9-75.7-75.7s33.9-75.7 75.7-75.7 
+        75.7 33.9 75.7 75.7-33.9 75.7-75.7 75.7zm146.4-194.3c0 
+        14.9-12 26.9-26.9 26.9-14.9 0-26.9-12-26.9-26.9 
+        s12-26.9 26.9-26.9 26.9 12 26.9 26.9zm76.1 
+        27.2c-1.7-35.7-9.9-67.3-36.2-93.5s-57.8-34.5-93.5-36.2C293.6 
+        0 154.4 0 104.3 4.3c-35.7 1.7-67.3 9.9-93.5 
+        36.2S-23.7 98.1-25.4 133.8C-29.7 183.9-29.7 
+        328.1-25.4 378.2c1.7 35.7 9.9 67.3 36.2 
+        93.5s57.8 34.5 93.5 36.2C154.4 512 293.6 
+        512 343.7 507.7c35.7-1.7 67.3-9.9 
+        93.5-36.2s34.5-57.8 36.2-93.5c4.3-50.1 
+        4.3-194.3 0-244.4zM398.8 388c-7.8 
+        19.7-22.9 35.8-42.6 42.6-29.5 11.7-99.5 
+        9-132.1 9s-102.7 2.6-132.1-9c-19.7-7.8-35.8-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 
+        9-132.1c7.8-19.7 22.9-35.8 42.6-42.6 29.5-11.7 
+        99.5-9 132.1-9s102.7-2.6 132.1 
+        9c19.7 7.8 35.8 22.9 42.6 42.6 11.7 29.5 9 
+        99.5 9 132.1s2.7 102.7-9 132.1z"/>
+        </svg>
+    </a>
+
+    <a href="https://github.com/seuuser" aria-label="GitHub">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" viewBox="0 0 496 512">
+        <path d="M165.9 397.4c0 2-2.3 3.6-5.2 
+        3.6-3.3.3-5.6-1.3-5.6-3.6 
+        0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-32.2-3.2c-.7 
+        2 .7 4.3 3.3 5.3 2.6 1 5.6.3 6.3-1.7.7-2-.7-4.3-3.3-5.3-2.6-1-5.6-.3-6.3 
+        1.7zm44.8-1.1c-2.9.7-4.9 
+        2.6-4.6 4.9.3 2.3 2.6 3.6 5.6 2.9 
+        2.9-.7 4.9-2.6 4.6-4.9-.3-2.3-2.6-3.6-5.6-2.9zM244 
+        8C109.5 8 0 117.5 0 252c0 108.9 
+        70.7 201.4 168.8 234.1 12.4 2.3 
+        16.9-5.4 16.9-12v-43.2c-68.7 15-83.2-33.1-83.2-33.1-11.3-28.8-27.6-36.4-27.6-36.4-22.6-15.4 
+        1.7-15.1 1.7-15.1 25 1.7 38.1 25.8 
+        38.1 25.8 22.3 38.1 58.5 27.1 
+        72.9 20.7 2.3-16.1 8.6-27.1 
+        15.6-33.4-54.8-6.1-112.6-27.6-112.6-123 
+        0-27.1 9.6-49.2 25.8-66.4-2.6-6.1-11.3-30.8 
+        2.3-64.1 0 0 21.2-6.7 69.5 25.4 
+        20.1-5.6 41.5-8.3 62.9-8.3s42.8 
+        2.6 62.9 8.3c48.3-32.1 69.5-25.4 
+        69.5-25.4 13.5 33.3 4.9 58 
+        2.3 64.1 16.5 17.2 25.8 39.3 
+        25.8 66.4 0 95.7-58.5 116.9-113.9 
+        123 8.9 7.6 17.2 22.6 17.2 46.1v68.3c0 
+        6.9 4.6 14.3 16.9 12C425.3 453.4 
+        496 360.9 496 252 496 117.5 
+        386.5 8 244 8z"/>
+        </svg>
+    </a>
+
+    <a href="https://linkedin.com/in/seuuser" aria-label="LinkedIn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" viewBox="0 0 448 512">
+        <path d="M100.28 448H7.4V149.5h92.88zm-46.44-339.7a53.86 
+        53.86 0 1 1 53.86-53.86 53.86 
+        53.86 0 0 1-53.86 53.86zM447.9 
+        448h-92.68V302.4c0-34.7-12.4-58.4-43.3-58.4-23.6 
+        0-37.6 15.8-43.7 31.1-2.3 
+        5.6-2.9 13.4-2.9 21.2V448h-92.78s1.2-261.8 
+        0-288.5h92.68v40.9c-.2.3-.5.7-.7 
+        1h.7v-1c12.3-19 34.3-46.1 83.5-46.1 
+        60.9 0 106.5 39.8 106.5 125.3V448z"/>
+        </svg>
+    </a>
+    <!-- X (Twitter) -->
+    <a href="https://x.com/seuuser" aria-label="X (Twitter)">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" viewBox="0 0 512 512">
+            <path d="M461.1 63.1h-87.6L256 215.3 138.5 63.1H41l144 187.8L45.3 448h88.3l123.5-160.6L383.6 448H471l-147.3-191.4L461.1 63.1z"/>
+        </svg>
+    </a>
+
+    </div>
+
+      <div class="footer">
+        © 2025 Vítor Dâmaso · Web Developer
+      </div>
+    </div>
+  </body>
+</html>
